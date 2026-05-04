@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📩 SMS Saver"
+        android:textSize="22sp"
+        android:textColor="#E0E0E0"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="#1E1E1E"/>
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search sender or message..."
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:background="#1E1E1E"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:inputType="text"
+        android:margin="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabExport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_save"
+        android:contentDescription="Export CSV"/>
+
+</LinearLayout>
