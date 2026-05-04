@@ -26,7 +26,7 @@
         android:padding="12dp"
         android:drawablePadding="8dp"
         android:inputType="text"
-        android:margin="8dp"/>
+        android:layout_margin="8dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
